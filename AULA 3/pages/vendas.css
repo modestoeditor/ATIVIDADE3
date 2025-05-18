@@ -61,16 +61,51 @@
 }
 
 header{
-    margin-top: 130px;
+    margin-top: 90px;
     text-align: center;
     font-size: xx-large;
 }
 
 .livro {
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    padding: 20px;
-    text-align: center
+    padding: 6rem 2rem;
+}
+
+.compras-livro {
+    background: var(--primaria);
+    border-radius: 16px;
+    backdrop-filter: blur(16px);
+    border: 2px solid var(--secundaria);
+    overflow: hidden; 
+    color: var(--letra);
+    text-align: center;
+    padding-bottom: 5px;
+    transition: all 0.3s ease;
+}
+
+.compras-livro:hover {
+    box-shadow: #ff51004d 0px 19px 38px, #ff51004d 0px 15px 12px;
+    cursor: pointer;
+    transform: translateY(-10px) scale(1.03);
+}
+
+.caixa {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.proj-imagens {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+footer{
+    text-align: center;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    color: #131313;
+    background: var(--secundaria);
 }
